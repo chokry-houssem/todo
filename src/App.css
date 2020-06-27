@@ -1,0 +1,112 @@
+body{
+    background: linear-gradient(to left , rgb(228, 105, 24), rgb(233, 172, 80) , white ,  rgb(149, 228, 238),rgb(33, 219, 243));
+}
+.App{
+    margin: 300px;
+    text-align: center;
+    background: linear-gradient(to left , rgb(228, 105, 24), rgb(233, 172, 80) , white ,  rgb(149, 228, 238),rgb(33, 219, 243));
+    border-radius: 15px;
+    box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2 ),
+     15px 15px 15px rgba(0,0,0,0.1);
+}
+.todo{
+    color: rgb(10, 10, 10);
+    font-size: 20px;
+    font-weight: 400;
+    align-items: center;
+    margin: 10px;
+    display: flex;
+    margin-left: 250px;}
+.btn {
+    border: none;
+    display: inline;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    color: rgb(56, 58, 58);
+    font-weight: 700;
+    font-size: 15px;
+    background-color:transparent;
+    padding: 10px 20px;
+    margin: 0 auto;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.20);
+  }
+  
+  .btn span {
+    position: relative; 
+    z-index: 1;
+  }
+  
+  .btn:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 490%;
+    width: 140%;
+    background: #87d1e434;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+    transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  }
+  
+  .btn:hover:after {
+    -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+    transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  }
+  .form__group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 50%;
+  }
+  
+  .form__field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid gray;
+    outline: 0;
+    font-size: 1.3rem;
+    color: white;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+  }
+  
+    .form__field ::placeholder {
+      color: transparent;
+    }
+  
+    .form__field:placeholder-shown ~ .form__label {
+      font-size: 1.3rem;
+      cursor: text;
+      top: 20px;
+    }
+  
+  .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: gray;
+  }
+  
+  .form__field:focus {
+      position: absolute;
+      top: 0;
+      display: block;
+      transition: 0.2s;
+      font-size: 1rem;
+      color: primary;
+      font-weight:700;    
+      padding-bottom: 6px;  
+      font-weight: 700;
+      border-width: 3px;
+      border-image-slice: 1;
+  }
